@@ -1,0 +1,19 @@
+*{box-sizing:border-box}
+body{margin:0;background:#07080a;color:#b9b2a3;font:17px/1.7 Georgia,'Times New Roman',serif}
+#app{max-width:820px;margin:0 auto;padding:16px;min-height:100vh;display:flex;flex-direction:column;gap:12px}
+header{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #2a2118;padding-bottom:8px}
+h1{margin:0;font-size:1.15rem;letter-spacing:.2em;text-transform:uppercase;color:#a8452f;font-weight:400}
+button{background:#15110d;color:#c9b98f;border:1px solid #3a2d1e;padding:8px 14px;font:inherit;cursor:pointer}
+button:hover{background:#2a1a12;border-color:#a8452f}
+#tools button{font-size:.75rem;padding:4px 10px;margin-left:4px}
+#classes{display:flex;gap:6px;flex-wrap:wrap;font-size:.85rem}
+#classes button{flex:1;min-width:140px}#classes button.on{background:#3a1a12;border-color:#a8452f}
+#log{flex:1;overflow-y:auto;max-height:52vh;padding-right:8px}
+.p{margin:0 0 .8em;animation:f 1.2s}.p.env{color:#7d8a86;font-style:italic;font-size:.93em}.p.you{color:#a8452f}
+@keyframes f{from{opacity:0}to{opacity:1}}
+#choices{display:flex;flex-direction:column;gap:6px}#choices button{text-align:left}
+#f{display:flex;gap:6px}#in{flex:1;background:#0d0b09;border:1px solid #3a2d1e;color:#d9cfb4;padding:8px;font:inherit}
+#hud{margin:0;background:#0b0a09;border:1px solid #3a2d1e;color:#8fa087;font:12px/1.5 Consolas,monospace;padding:10px;white-space:pre-wrap;overflow-x:auto}
+body.mad #log{filter:blur(.6px);animation:sh .4s infinite}body.mad{color:#c77}
+@keyframes sh{50%{transform:translateX(1px)}}
+.dead #choices{display:none}
